@@ -1,16 +1,16 @@
 function sayMyName(){
-    console.log("H");
-    console.log("I");
-    console.log("T");
-    console.log("E");
-    console.log("S");
-    console.log("H");
+    //console.log("H");
+    //console.log("I");
+    //console.log("T");
+    //console.log("E");
+    //console.log("S");
+    //console.log("H");
 };
 
 sayMyName();
 
 function addingTwoNumbers(number1, number2){
-    console.log(`Adding of the two number is: ${number1 + number2}`);
+    //console.log(`Adding of the two number is: ${number1 + number2}`);
 };
 
 addingTwoNumbers(3, 5); // Interesting
@@ -32,7 +32,7 @@ function addTwoNumbers(number1, number2){
 // Default Value is Kartikey.
 function loginUserMessage(username = "Kartikey"){
     if(!username){
-        console.log("Please enter a username :");
+        //console.log("Please enter a username :");
         return;
     }
     return `${username} just logged in`;
@@ -51,7 +51,7 @@ function calculateCartPrice(value1, value2, ...values){
 
 // This is the way, you can handle the object inside the function.
 function userDetails(object){
-    console.log(`Username is ${object.username} , email is ${object.email} and mobile no is ${object.mobile}`);
+    //console.log(`Username is ${object.username} , email is ${object.email} and mobile no is ${object.mobile}`);
 };
 
 userDetails({
