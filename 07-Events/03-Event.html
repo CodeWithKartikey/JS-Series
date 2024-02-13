@@ -12,20 +12,20 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    // const changeDate = () => {
-    //     console.log(Date.now());
-    // }
+    const changeDate = () => {
+        console.log(Date.now());
+    }
 
-    // let changeMeInterval;
+    let changeMeInterval;
 
-    // document.querySelector('#start').addEventListener('click', () => {
-    //     changeMeInterval = setInterval(changeDate, 2000);
-    //     console.log("Clicked For Start The Interval For The Event In JS");
-    // })
+    document.querySelector('#start').addEventListener('click', () => {
+        changeMeInterval = setInterval(changeDate, 2000);
+        console.log("Clicked For Start The Interval For The Event In JS");
+    })
 
-    // document.querySelector('#stop').addEventListener('click', () => {
-    //     clearInterval(changeMeInterval);
-    //     console.log("Clicked For Stop The Interval For The Event In JS");
-    // })
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearInterval(changeMeInterval);
+        console.log("Clicked For Stop The Interval For The Event In JS");
+    })
 </script>
 </html>

@@ -12,20 +12,20 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    // const changeText = () => {
-    //     document.querySelector('h1').innerHTML = "02 - Event In JS";
-    // }
+    const changeText = () => {
+        document.querySelector('h1').innerHTML = "02 - Event In JS";
+    }
 
-    // let changeMe;
+    let changeMe;
 
-    // document.querySelector('#start').addEventListener('click', () => {
-    //     changeMe = setTimeout(changeText, 2000);
-    //     console.log("Clicked For Start The Timeout The Event In JS");
-    // })
+    document.querySelector('#start').addEventListener('click', () => {
+        changeMe = setTimeout(changeText, 2000);
+        console.log("Clicked For Start The Timeout The Event In JS");
+    })
 
-    // document.querySelector('#stop').addEventListener('click', () => {
-    //     clearTimeout(changeMe);
-    //     console.log("Clicked For Stop The Timeout The Event In JS");
-    // })
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearTimeout(changeMe);
+        console.log("Clicked For Stop The Timeout The Event In JS");
+    })
 </script>
 </html>
