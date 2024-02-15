@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind In JS</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+    class React {
+        constructor(){
+            this.library = "React";
+            this.server = "https://localhost:3000";
+        }
+        handleClick(){
+            console.log("Button clicked");
+
+            console.log(this.library);
+            console.log(this.server);
+        }
+    }
+    document.querySelector('button').addEventListener('click', React.handleClick.bind(React));
+
+    // const app = new React();
+    // document.querySelector('button').addEventListener('click', app.handleClick.bind(app));
+</script>
+</html>
+
+<!-- 
+    const Counter = {
+    count: 0,
+
+    increment: function() {
+        this.count++; // 'this' refers to the Counter object
+        console.log(this.count);
+    }
+};
+
+Counter.increment(); // Output: 1
+
+/*
+    Here, we're attaching a click event listener to a button. When the button is clicked, it invokes the increment method of the Counter object. But there's a problem! Inside the event listener, this will no longer refer to the Counter object. Instead, it will refer to the element that triggered the event, which is the button.
+*/
+document.querySelector('button').addEventListener('click', Counter.increment);
+
+/*
+    By using bind(Counter), we're explicitly setting the value of this inside the increment method to be the Counter object. So, even when the increment method is invoked as an event listener, this will still refer to the Counter object.
+*/
+document.querySelector('button').addEventListener('click', Counter.increment.bind(Counter));
+-->
