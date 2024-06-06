@@ -44,6 +44,8 @@ Embark on this journey with the JS Series to unlock the full potential of JavaSc
 
 ---
 
-Happy coding. 🚀
+Thank you for exploring the JS-Series repository. 😁 
+
+Designed, Developed & Maintained by CodeWithKartikey - Happy coding. 🚀
 
 ---
